@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tetris</title>
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    
+    <script type="module" crossorigin src="/assets/index-f30cb4ef.js"></script>
+    <link rel="stylesheet" href="/assets/index-feb4fc59.css">
+  </head>
+  <body class="bg-gray-900 flex items-center justify-center">
+
+    <main id="gameContainer">
+      <canvas id="can" style="border:1px solid #333;"></canvas>
+      <div id="gameUI">
+        <p id="gameScoreText">0</p>
+        <p id="gamePausedText">Paused</p>
+        <p id="gameGameOverText">Game Over</p>
+      </div>
+    </main>
+
+    <section id="controlsSection" class="groupedSection">
+      <p>Controls</p>
+      <ul>
+        <li>Left arrow & Right arrow: Move active block</li>
+        <li>Down arrow: Drop active block</li>
+        <li>Space: Rotate active block</li>
+        <li>Escape: Pause/Resume</li>
+        <li>Enter: Restart</li>
+      </ul>
+    </section>
+
+    <section id="optionsSection" class="groupedSection">
+      <p>Options</p>
+      <ul>
+        <li>
+          <p>Game Speed</p>
+          <input id="gameSpeedInput" type="text" placeholder="game speed in milliseconds (default: 300)">
+        </li>
+        <li>
+          <button id="optionsConfirmBtn">Confirm</button>
+        </li>
+      </ul>
+    </section>
+    
+    
+  </body>
+</html>
